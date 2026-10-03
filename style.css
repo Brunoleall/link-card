@@ -11,7 +11,7 @@ body{
     color: antiquewhite;
 }
 
-/*------------Profile------------*/
+/*------------PROFILE------------*/
 #profile{
     padding: 5px;
     margin: 70px auto 40px auto;
@@ -33,4 +33,26 @@ body{
     margin: 0 auto;
     text-align: center;
 
+}
+
+/*--------------BUTTONS----------*/
+
+#buttons{
+    display: flex;
+    
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+}
+
+#buttons a {
+    display: flex;
+    padding: 16px 24px;
+    flex-direction: column;
+    color: antiquewhite;
+    text-decoration: none;
+    align-items: center;
+    border: 2px solid rgba(255, 254, 254, 0.2);
+    border-radius: 4px;
+    background-color: rgba(255, 254, 254, 0.1);
 }
