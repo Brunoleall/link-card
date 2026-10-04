@@ -11,7 +11,7 @@
     --font-principal: "Inter", sans-serif;
     --icons-color: antiquewhite;
     --direction-switch: left;
-     --position-switch-principal: absolute;
+    --switch-icon: url(./assets/moon-stars.svg)
 
 }
 
@@ -23,7 +23,7 @@
     --font-principal: "Inter", sans-serif;
     --icons-color: black;
     --direction-switch: right;
-    --switch-icon-z-index: 2;
+    --switch-icon: url(./assets/sun.svg)
 }
 
 
@@ -70,38 +70,31 @@ body{
     position: relative;
 }
 #handle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 33px;
     height: 33px;
     border-radius: 50%;
-    background-color: antiquewhite;
+    background: antiquewhite var(--switch-icon) no-repeat center;
     position: absolute;
     z-index: 1;
     color: black; 
+    border: none;
 }
 
-#handle-ligth{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 33px;
-    height: 33px;
-    border-radius: 50%;
-    background-color: antiquewhite;
-    position: absolute;
-    z-index: var(--switch-icon-z-index);
-    color: black; 
+#handle :hover{
+    cursor: pointer;
+    
 }
+
 #track{
+    display: block;
     position: absolute;
     inset: 0;
     margin: auto 0;
-    height: 20px;
+    height: 24px;
     border-radius: 15px;
     border: 2px solid var(--border-color-buttons);
     background-color: var(--background-buttons);
+   
     
 }
 
