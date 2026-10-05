@@ -10,13 +10,14 @@
     --text-principal: antiquewhite;
     --font-principal: "Inter", sans-serif;
     --icons-color: antiquewhite;
-    --direction-switch: left;
+    --direction-switch: 0%;
     --switch-icon: url(./assets/moon-stars.svg);
     --hover-border:  rgba(245, 239, 239, 0.982);
     --hover-color: white;
     --hover-shadow: rgba(255, 254, 254, 0.3);
     --hover-footer: #3b82f6;
-    
+    --track-background:  rgba(255, 254, 254, 0.1);
+
 
 }
 
@@ -27,12 +28,13 @@
     --text-principal: rgba(0, 0, 0, 0.71);
     --font-principal: "Inter", sans-serif;
     --icons-color: black;
-    --direction-switch: right;
+    --direction-switch: 50%;
     --switch-icon: url(./assets/sun.svg);
     --hover-border: rgba(16, 15, 15, 0.794);
     --hover-color: black;
     --hover-shadow: rgba(65, 64, 64, 0.5);
     --hover-footer:  #1ff4ff;
+    --track-background:  rgba(18, 59, 194, 0.648);
 }
 
 
@@ -71,7 +73,6 @@ body {
 #switch{
     margin: 0 auto 20px auto;
     display: flex;
-    justify-content: var(--direction-switch);
     align-items: center;
     width: 64px;
     height: 40px;
@@ -81,12 +82,21 @@ body {
     width: 33px;
     height: 33px;
     border-radius: 50%;
+    left: var(--direction-switch);
     background: antiquewhite var(--switch-icon) no-repeat center;
     position: absolute;
     z-index: 1;
     color: black; 
     border: none;
      transition: box-shadow 0.3s ease;
+     transition: ;
+}
+
+.light #switch button{
+    animation: slide-in 0.5s;
+}
+ #switch button{
+    animation: slide-back 0.5s;
 }
 
 #handle:hover{
@@ -103,7 +113,7 @@ body {
     height: 24px;
     border-radius: 15px;
     border: 2px solid var(--border-color-buttons);
-    background-color: var(--background-buttons);
+    background-color: var(--track-background);
    
     
 }
@@ -259,4 +269,22 @@ footer a:hover{
         margin: 20px auto 0px auto;
     }
     
+}
+
+@keyframes slide-in{
+    from{
+        left:0%;
+    }
+    to {
+        right: 50%;
+    }
+}
+
+@keyframes slide-back{
+    from{
+        left:50%;
+    }
+    to {
+        right: 0%;
+    }
 }
