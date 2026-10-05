@@ -11,7 +11,11 @@
     --font-principal: "Inter", sans-serif;
     --icons-color: antiquewhite;
     --direction-switch: left;
-    --switch-icon: url(./assets/moon-stars.svg)
+    --switch-icon: url(./assets/moon-stars.svg);
+    --hover-border:  rgba(245, 239, 239, 0.982);
+    --hover-color: white;
+    --hover-shadow: rgba(255, 254, 254, 0.3);
+    
 
 }
 
@@ -19,11 +23,14 @@
     --background-principal: linear-gradient(100deg, rgba(12, 74, 133, 0.843) 0%, rgba(179, 171, 223, 0.813) 90%);
     --background-buttons: rgba(255, 254, 254, 0.1);
     --border-color-buttons:  rgba(61, 61, 61, 0.303);
-    --text-principal: black;
+    --text-principal: rgba(0, 0, 0, 0.71);
     --font-principal: "Inter", sans-serif;
     --icons-color: black;
     --direction-switch: right;
-    --switch-icon: url(./assets/sun.svg)
+    --switch-icon: url(./assets/sun.svg);
+    --hover-border: rgba(16, 15, 15, 0.794);
+    --hover-color: black;
+    --hover-shadow: rgba(65, 64, 64, 0.5);
 }
 
 
@@ -39,7 +46,7 @@ body{
 #profile{
     padding: 5px;
     margin: 70px auto 20px auto; 
-   
+   opacity: 1;
    
 }
 
@@ -119,7 +126,17 @@ body{
     border: 2px solid var(--border-color-buttons);
     border-radius: 10px;
     background-color: var(--background-buttons);
+    transition: 0.5s;
 }
+
+#buttons a:hover{
+    transform: translatey(-2px);
+    box-shadow: 0px 0px 50px 1px var(--hover-shadow);
+    border: 2px solid var(--hover-border);
+    color: var(--hover-color);
+    
+}
+
 
 /*______________ICONS_____________*/
 #icons{
