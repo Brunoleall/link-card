@@ -23,7 +23,7 @@
 }
 
 .light{
-    --background-principal: linear-gradient(100deg, rgba(12, 74, 133, 0.843) 0%, rgba(179, 171, 223, 0.813) 90%);
+    --background-principal: linear-gradient(100deg, rgba(12, 74, 133) 0%, rgba(179, 171, 223)80%);
     --background-buttons: rgba(255, 254, 254, 0.1);
     --border-color-buttons:  rgba(61, 61, 61, 0.303);
     --text-principal: rgba(0, 0, 0, 0.71);
@@ -39,6 +39,7 @@
 }
 
 html{
+    background: var(--background-principal);
     min-height: 100dvh;
 }
 
