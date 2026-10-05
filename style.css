@@ -15,6 +15,7 @@
     --hover-border:  rgba(245, 239, 239, 0.982);
     --hover-color: white;
     --hover-shadow: rgba(255, 254, 254, 0.3);
+    --hover-footer: #3b82f6;
     
 
 }
@@ -31,6 +32,7 @@
     --hover-border: rgba(16, 15, 15, 0.794);
     --hover-color: black;
     --hover-shadow: rgba(65, 64, 64, 0.5);
+    --hover-footer:  #1ff4ff;
 }
 
 
@@ -183,4 +185,20 @@ footer{
     width: 50%;
     margin: 20px auto 0px auto;
     text-align: center;
+}
+footer a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-principal);
+    transition: 0.5s;
+}
+
+footer a:hover{
+    transform: scaleX(1.1) translateX(10px) translateY(-10px);
+    color: var(--hover-footer);
+     text-shadow:
+     0 0 2px rgba(124, 140, 255, 0.7),
+     0 0 10px rgba(124, 140, 255, 0.5),
+     0 0 15px rgba(124, 140, 255, 0.3);
+    
 }
