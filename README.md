@@ -15,7 +15,7 @@
 <br>
 
 <p align="center">
-  <img alt="projeto LinkCard" src="./banner-linksCard.png" width="100%">
+  <img alt="projeto LinkCard" src="./assets/banner-linksCard.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
