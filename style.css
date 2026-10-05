@@ -1,6 +1,7 @@
 *{
     margin: 0; 
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -37,11 +38,18 @@
     --track-background:  rgba(18, 59, 194, 0.648);
 }
 
+html{
+    min-height: 100dvh;
+}
 
 body {
-    background-image: var(--background-principal);
+    background: var(--background-principal);
     color: var(--text-principal);
     font-family: var(--font-principal);
+    min-height: 100dvh;
+}
+
+main {
     min-height: 100dvh;
 }
 
