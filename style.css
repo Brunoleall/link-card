@@ -144,6 +144,7 @@ body{
     height: 88px;
     justify-content: center;
     margin-top: 25px;
+    
 }
 
 #icons ul{
@@ -154,17 +155,26 @@ body{
 }
 
 #icons ion-icon{
+    display: block;
     width: 27px;
     height: 27px;
     color: var(--icons-color);
     transition: 0.3;
 
 }
+#icons li{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7;
+}
 
-#icons ion-icon:hover{
+#icons li:hover{
     background: var(--hover-shadow);
-    box-shadow: 0px 0px 2px 7px var(--hover-shadow);
     border-radius: 50%;
+    
 }
 
 /*_______________FOOTER______________*/
