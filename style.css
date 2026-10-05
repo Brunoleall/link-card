@@ -195,7 +195,7 @@ footer a{
 }
 
 footer a:hover{
-    transform: scaleX(1.1) translateX(10px) translateY(-10px);
+    transform: scaleX(1) translateX(5px) translateY(-5px);
     color: var(--hover-footer);
      text-shadow:
      0 0 2px rgba(124, 140, 255, 0.7),
