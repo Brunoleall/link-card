@@ -42,6 +42,7 @@ body {
     background-image: var(--background-principal);
     color: var(--text-principal);
     font-family: var(--font-principal);
+    min-height: 100dvh;
 }
 
 /*_________________PROFILE_________________*/
